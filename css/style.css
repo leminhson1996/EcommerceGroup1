@@ -64,6 +64,7 @@ label{
     margin-bottom: 1em;
 	font-family: 'Roboto Slab', serif;
 }
+
 .agileits-top-slider{
 	width: 27%;
     margin: 0 auto;
@@ -266,9 +267,10 @@ label{
 }
 .pricing-top h3{
     color: #FFF;
-    font-size: 2em;
+    font-size: 25px;
     margin: 0;
-    font-weight: 100;
+    margin-top: 10px;
+    font-weight: 600;
 }
 .pricing-top p{
 	color:#FFF;
@@ -276,12 +278,11 @@ label{
 	margin:1em 0 0 0;
 }
 .pricing-top p span{
-    font-size: 4em;
-    font-weight: 600;
+    font-size: 2em;
 }
 .pricing-bottom{
     background: #FFF;
-    text-align: center;
+    /*text-align: center;*/
     padding: 2em;
 }
 .pricing-bottom-top {
@@ -296,12 +297,12 @@ label{
 }
 .pricing-bottom-bottom{
 	padding: 2em 0;
-    border-top: solid 1px #EFECEC;
-    border-bottom: solid 1px #EFECEC;
+    /*border-top: solid 1px #EFECEC;*/
+    /*border-bottom: solid 1px #EFECEC;*/
 }
 .pricing-bottom-bottom p{
 	color: #A5A5A5;
-    font-size: .875em;
+    font-size: 1em;
     margin: 0 0 1em 0;
 }
 .pricing-bottom-bottom p span{
@@ -733,3 +734,36 @@ button::-moz-focus-inner {
 	}
 }
 /*-- //responsive --*/
+
+.img-circle {
+	border-radius: 50%;
+	width: 50%;
+	height: 50%;
+	margin-top: 20px;
+}
+.banner {
+	width: 100%;
+}
+
+.banner img{
+padding-top: 10px;
+/*font-size: 36px;*/
+padding:0px;
+margin: 0px;
+line-height:100px;
+/*text-shadow: 0 -1px 1px rgba(0,0,0,0.25);*/
+/*width:310px;*/
+float:left;
+}
+.slogan{
+float: left;
+margin:20px 20px 0px 20px;
+font-size: 15px;
+font-weight: bold;
+color: #8BC34A;
+}
+
+.banner h1 {
+	color: #ffffff;
+}
+
