@@ -1,0 +1,59 @@
+.icon-row {
+	width: 7vw;
+	height: 6.5vw;
+	background-position: center center;
+
+}
+
+.form-left {
+	width: 50%;
+	float: left;
+}
+
+.table-right {
+	width: 50%;
+	float: right;
+}
+.table{
+	width: 100%;
+	position: inherit;
+}
+
+.edit-button {
+	width: 80px;
+	margin: 0 0 7px 0;
+	font-size: 15px;
+	border: 0;
+}
+
+.admin-text {
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.editor-text {
+	color: #82b9d6;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.active-link {
+	font-weight: bold;
+}
+
+.tab-link {
+	font-size: 20px;
+}
+
+.nav-tab {
+	margin-bottom: 30px;
+}
+
+.edit-product-hidden{
+	visibility: hidden;
+}
+
+.edit-product-visible {
+	visibility: visible;
+}
