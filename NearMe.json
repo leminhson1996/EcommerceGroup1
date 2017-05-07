@@ -8,7 +8,7 @@
         {
           "title": "123 Lý Thường Kiệt",
           "latitude": 10.823368,
-          "longitude": 106.682572
+          "longtitude": 106.682572
         },
         {
           "title": "222 Lý Thường Kiệt",
@@ -18,7 +18,7 @@
         {
           "title": "66 Nguyen Tri Phuong",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     },
@@ -30,7 +30,7 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 18.0527776,
-          "longitude": 106.758936
+          "longtitude": 106.758936
         },
         {
           "title": "Hùng Vương Plaza",
@@ -40,7 +40,7 @@
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     },
@@ -52,7 +52,7 @@
         {
           "title": "Dai học Y Duoc",
           "latitude": 18.0527776,
-          "longitude": 106.758936
+          "longtitude": 106.758936
         },
         {
           "title": "Hùng Vương Plaza",
@@ -62,7 +62,7 @@
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     },
@@ -74,7 +74,7 @@
         {
           "title": "Dai học Y Duoc",
           "latitude": 18.0527776,
-          "longitude": 106.758936
+          "longtitude": 106.758936
         },
         {
           "title": "Hùng Vương Plaza",
@@ -84,7 +84,7 @@
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     },
@@ -96,7 +96,7 @@
         {
           "title": "Dai học Y Duoc",
           "latitude": 18.0527776,
-          "longitude": 106.758936
+          "longtitude": 106.758936
         },
         {
           "title": "Hùng Vương Plaza",
@@ -106,7 +106,7 @@
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     },
@@ -118,7 +118,7 @@
         {
           "title": "Dai học Y Duoc",
           "latitude": 18.0527776,
-          "longitude": 106.758936
+          "longtitude": 106.758936
         },
         {
           "title": "Hùng Vương Plaza",
@@ -128,7 +128,7 @@
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     },
@@ -140,7 +140,7 @@
         {
           "title": "Coopmart",
           "latitude": 10.7569453,
-          "longitude": 106.668244
+          "longtitude": 106.668244
         },
         {
           "title": "Hùng Vương Plaza",
@@ -150,7 +150,7 @@
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longitude": 106.668602
+          "longtitude": 106.668602
         }
       ]
     }
