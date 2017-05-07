@@ -7,17 +7,17 @@
       "items": [
         {
           "title": "123 Lý Thường Kiệt",
-          "lattitude": 10.823368,
+          "latitude": 10.823368,
           "longitude": 106.682572
         },
         {
           "title": "222 Lý Thường Kiệt",
           "longtitude": 106.683552,
-          "lattitude": 10.8235837
+          "latitude": 10.8235837
         },
         {
           "title": "66 Nguyen Tri Phuong",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
@@ -29,7 +29,7 @@
       "items": [
         {
           "title": "Đại học Y Dược",
-          "lattitude": 18.0527776,
+          "latitude": 18.0527776,
           "longitude": 106.758936
         },
         {
@@ -39,7 +39,7 @@
         },
         {
           "title": "66 Nguyễn Tri Phương",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
@@ -51,7 +51,7 @@
       "items": [
         {
           "title": "Dai học Y Duoc",
-          "lattitude": 18.0527776,
+          "latitude": 18.0527776,
           "longitude": 106.758936
         },
         {
@@ -61,7 +61,7 @@
         },
         {
           "title": "66 Nguyễn Tri Phương",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
@@ -73,7 +73,7 @@
       "items": [
         {
           "title": "Dai học Y Duoc",
-          "lattitude": 18.0527776,
+          "latitude": 18.0527776,
           "longitude": 106.758936
         },
         {
@@ -83,7 +83,7 @@
         },
         {
           "title": "66 Nguyễn Tri Phương",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
@@ -95,7 +95,7 @@
       "items": [
         {
           "title": "Dai học Y Duoc",
-          "lattitude": 18.0527776,
+          "latitude": 18.0527776,
           "longitude": 106.758936
         },
         {
@@ -105,7 +105,7 @@
         },
         {
           "title": "66 Nguyễn Tri Phương",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
@@ -117,7 +117,7 @@
       "items": [
         {
           "title": "Dai học Y Duoc",
-          "lattitude": 18.0527776,
+          "latitude": 18.0527776,
           "longitude": 106.758936
         },
         {
@@ -127,7 +127,7 @@
         },
         {
           "title": "66 Nguyễn Tri Phương",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
@@ -139,7 +139,7 @@
       "items": [
         {
           "title": "Coopmart",
-          "lattitude": 10.7569453,
+          "latitude": 10.7569453,
           "longitude": 106.668244
         },
         {
@@ -149,7 +149,7 @@
         },
         {
           "title": "66 Nguyễn Tri Phương",
-          "lattitude": 10.7670247,
+          "latitude": 10.7670247,
           "longitude": 106.668602
         }
       ]
