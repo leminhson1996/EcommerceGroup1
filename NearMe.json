@@ -1,0 +1,158 @@
+{
+  "Categories": [
+    {
+      "imageLink": "abc.png",
+      "title": "Cây Xăng",
+      "counter": 100,
+      "items": [
+        {
+          "title": "123 Lý Thường Kiệt",
+          "lattitude": 10.823368,
+          "longitude": 106.682572
+        },
+        {
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837
+        },
+        {
+          "title": "66 Nguyen Tri Phuong",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    },
+    {
+      "imageLink": "abc.png",
+      "title": "ATM",
+      "counter": 100,
+      "items": [
+        {
+          "title": "Đại học Y Dược",
+          "lattitude": 18.0527776,
+          "longitude": 106.758936
+        },
+        {
+          "title": "Hùng Vương Plaza",
+          "longtitude": 10.7555715,
+          "latitude": 106.662988
+        },
+        {
+          "title": "66 Nguyễn Tri Phương",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    },
+    {
+      "imageLink": "abc.png",
+      "title": "Nhà hàng",
+      "counter": 100,
+      "items": [
+        {
+          "title": "Dai học Y Duoc",
+          "lattitude": 18.0527776,
+          "longitude": 106.758936
+        },
+        {
+          "title": "Hùng Vương Plaza",
+          "longtitude": 10.7555715,
+          "latitude": 106.662988
+        },
+        {
+          "title": "66 Nguyễn Tri Phương",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    },
+    {
+      "imageLink": "abc.png",
+      "title": "Sân bóng mini",
+      "counter": 100,
+      "items": [
+        {
+          "title": "Dai học Y Duoc",
+          "lattitude": 18.0527776,
+          "longitude": 106.758936
+        },
+        {
+          "title": "Hùng Vương Plaza",
+          "longtitude": 10.7555715,
+          "latitude": 106.662988
+        },
+        {
+          "title": "66 Nguyễn Tri Phương",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    },
+    {
+      "imageLink": "abc.png",
+      "title": "Phòng tập Gym",
+      "counter": 100,
+      "items": [
+        {
+          "title": "Dai học Y Duoc",
+          "lattitude": 18.0527776,
+          "longitude": 106.758936
+        },
+        {
+          "title": "Hùng Vương Plaza",
+          "longtitude": 10.7555715,
+          "latitude": 106.662988
+        },
+        {
+          "title": "66 Nguyễn Tri Phương",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    },
+    {
+      "imageLink": "abc.png",
+      "title": "Rạp chiếu phim",
+      "counter": 100,
+      "items": [
+        {
+          "title": "Dai học Y Duoc",
+          "lattitude": 18.0527776,
+          "longitude": 106.758936
+        },
+        {
+          "title": "Hùng Vương Plaza",
+          "longtitude": 10.7555715,
+          "latitude": 106.662988
+        },
+        {
+          "title": "66 Nguyễn Tri Phương",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    },
+    {
+      "imageLink": "abc.png",
+      "title": "Siêu thị",
+      "counter": 100,
+      "items": [
+        {
+          "title": "Coopmart",
+          "lattitude": 10.7569453,
+          "longitude": 106.668244
+        },
+        {
+          "title": "Hùng Vương Plaza",
+          "longtitude": 10.7555715,
+          "latitude": 106.662988
+        },
+        {
+          "title": "66 Nguyễn Tri Phương",
+          "lattitude": 10.7670247,
+          "longitude": 106.668602
+        }
+      ]
+    }
+  ]
+}
