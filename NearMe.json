@@ -23,19 +23,19 @@
       ]
     },
     {
-      "imageLink": "abc.png",
+      "imageLink": "https://leminhson1996.github.io/EcommerceGroup1/money.png",
       "title": "ATM",
       "counter": 100,
       "items": [
         {
           "title": "Đại học Y Dược",
-          "latitude": 18.0527776,
-          "longtitude": 106.758936
+          "latitude": 10.7721302,
+          "longtitude": 106.659769
         },
         {
           "title": "Hùng Vương Plaza",
-          "longtitude": 10.7555715,
-          "latitude": 106.662988
+          "longtitude": 10.7557692,
+          "latitude": 106.663079
         },
         {
           "title": "66 Nguyễn Tri Phương",
@@ -45,19 +45,19 @@
       ]
     },
     {
-      "imageLink": "abc.png",
+      "imageLink": "https://leminhson1996.github.io/EcommerceGroup1/restaurant.png",
       "title": "Nhà hàng",
       "counter": 100,
       "items": [
         {
-          "title": "Dai học Y Duoc",
-          "latitude": 18.0527776,
-          "longtitude": 106.758936
+          "title": "Đại học Y Dược",
+          "latitude": 10.7721302,
+          "longtitude": 106.659769
         },
         {
           "title": "Hùng Vương Plaza",
-          "longtitude": 10.7555715,
-          "latitude": 106.662988
+          "longtitude": 10.7557692,
+          "latitude": 106.663079
         },
         {
           "title": "66 Nguyễn Tri Phương",
@@ -67,19 +67,19 @@
       ]
     },
     {
-      "imageLink": "abc.png",
+      "imageLink": "https://leminhson1996.github.io/EcommerceGroup1/foootball.png",
       "title": "Sân bóng mini",
       "counter": 100,
       "items": [
         {
-          "title": "Dai học Y Duoc",
-          "latitude": 18.0527776,
-          "longtitude": 106.758936
+          "title": "Đại học Y Dược",
+          "latitude": 10.7721302,
+          "longtitude": 106.659769
         },
         {
           "title": "Hùng Vương Plaza",
-          "longtitude": 10.7555715,
-          "latitude": 106.662988
+          "longtitude": 10.7557692,
+          "latitude": 106.663079
         },
         {
           "title": "66 Nguyễn Tri Phương",
@@ -89,19 +89,19 @@
       ]
     },
     {
-      "imageLink": "abc.png",
+      "imageLink": "https://leminhson1996.github.io/EcommerceGroup1/gym.png",
       "title": "Phòng tập Gym",
       "counter": 100,
       "items": [
         {
-          "title": "Dai học Y Duoc",
-          "latitude": 18.0527776,
-          "longtitude": 106.758936
+          "title": "Đại học Y Dược",
+          "latitude": 10.7721302,
+          "longtitude": 106.659769
         },
         {
           "title": "Hùng Vương Plaza",
-          "longtitude": 10.7555715,
-          "latitude": 106.662988
+          "longtitude": 10.7557692,
+          "latitude": 106.663079
         },
         {
           "title": "66 Nguyễn Tri Phương",
@@ -111,19 +111,19 @@
       ]
     },
     {
-      "imageLink": "abc.png",
+      "imageLink": "https://leminhson1996.github.io/EcommerceGroup1/cinema.png",
       "title": "Rạp chiếu phim",
       "counter": 100,
       "items": [
         {
-          "title": "Dai học Y Duoc",
-          "latitude": 18.0527776,
-          "longtitude": 106.758936
+          "title": "Đại học Y Dược",
+          "latitude": 10.7721302,
+          "longtitude": 106.659769
         },
         {
           "title": "Hùng Vương Plaza",
-          "longtitude": 10.7555715,
-          "latitude": 106.662988
+          "longtitude": 10.7557692,
+          "latitude": 106.663079
         },
         {
           "title": "66 Nguyễn Tri Phương",
@@ -133,19 +133,19 @@
       ]
     },
     {
-      "imageLink": "abc.png",
+      "imageLink": "https://leminhson1996.github.io/EcommerceGroup1/supermaarket.png",
       "title": "Siêu thị",
       "counter": 100,
       "items": [
         {
-          "title": "Coopmart",
-          "latitude": 10.7569453,
-          "longtitude": 106.668244
+          "title": "Đại học Y Dược",
+          "latitude": 10.7721302,
+          "longtitude": 106.659769
         },
         {
           "title": "Hùng Vương Plaza",
-          "longtitude": 10.7555715,
-          "latitude": 106.662988
+          "longtitude": 10.7557692,
+          "latitude": 106.663079
         },
         {
           "title": "66 Nguyễn Tri Phương",
