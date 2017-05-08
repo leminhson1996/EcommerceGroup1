@@ -8,17 +8,20 @@
         {
           "title": "123 Lý Thường Kiệt",
           "latitude": 10.823368,
-          "longtitude": 106.682572
+          "longtitude": 106.682572,
+          "phone": "0967913097"
         },
         {
           "title": "222 Lý Thường Kiệt",
           "longtitude": 106.683552,
-          "latitude": 10.8235837
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyen Tri Phuong",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+           "phone": "0967913097"
         }
       ]
     },
@@ -30,17 +33,20 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 10.7721302,
-          "longtitude": 106.659769
+          "longtitude": 106.659769,
+           "phone": "0967913097"
         },
-        {
-          "title": "Hùng Vương Plaza",
-          "longtitude": 10.7557692,
-          "latitude": 106.663079
+         {
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+          "phone": "0967913097"
         }
       ]
     },
@@ -52,17 +58,20 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 10.7721302,
-          "longtitude": 106.659769
+          "longtitude": 106.659769,
+          "phone": "0967913097"
         },
-        {
-          "title": "Hùng Vương Plaza",
-          "longtitude": 10.7557692,
-          "latitude": 106.663079
+         {
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+          "phone": "0967913097"
         }
       ]
     },
@@ -74,17 +83,20 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 10.7721302,
-          "longtitude": 106.659769
+          "longtitude": 106.659769,
+          "phone": "0967913097"
         },
         {
-          "title": "Hùng Vương Plaza",
-          "longtitude": 10.7557692,
-          "latitude": 106.663079
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+          "phone": "0967913097"
         }
       ]
     },
@@ -96,17 +108,20 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 10.7721302,
-          "longtitude": 106.659769
+          "longtitude": 106.659769,
+          "phone": "0967913097"
         },
         {
-          "title": "Hùng Vương Plaza",
-          "longtitude": 10.7557692,
-          "latitude": 106.663079
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+          "phone": "0967913097"
         }
       ]
     },
@@ -118,17 +133,20 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 10.7721302,
-          "longtitude": 106.659769
+          "longtitude": 106.659769,
+          "phone": "0967913097"
         },
         {
-          "title": "Hùng Vương Plaza",
-          "longtitude": 10.7557692,
-          "latitude": 106.663079
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+          "phone": "0967913097"
         }
       ]
     },
@@ -140,17 +158,20 @@
         {
           "title": "Đại học Y Dược",
           "latitude": 10.7721302,
-          "longtitude": 106.659769
+          "longtitude": 106.659769,
+          "phone": "0967913097"
         },
         {
-          "title": "Hùng Vương Plaza",
-          "longtitude": 10.7557692,
-          "latitude": 106.663079
+          "title": "222 Lý Thường Kiệt",
+          "longtitude": 106.683552,
+          "latitude": 10.8235837,
+           "phone": "0967913097"
         },
         {
           "title": "66 Nguyễn Tri Phương",
           "latitude": 10.7670247,
-          "longtitude": 106.668602
+          "longtitude": 106.668602,
+          "phone": "0967913097"
         }
       ]
     }
