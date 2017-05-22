@@ -19,6 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--fonts-->
 <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
 <!--//fonts-->
+	<script type="text/javascript" src="js/callAPI.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -58,22 +59,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="cart box_1">
 						<a href="#">
-							<a href="sign-up-login-form/login.html"><h3>Login</h3></a>
+							<a href="sign-up-login-form/login.html"><h3 id="login">Login</h3></a>
 						</a>
 						<a href="#">
-							<a href="sign-up-login-form/register.html"><h3>Register</h3>
+							<a href="sign-up-login-form/register.html"><h3 id="register">Register</h3>
 						</a>
 						<a href="checkout.html">
 							<h3> <!-- <div class="total"> -->
 								<!-- <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div> -->
-								<img src="./images/cart.png" alt=""/><!-- Shopping cart -->
+								<img src="images/cart.png" alt=""/><!-- Shopping cart -->
 							</h3>
 						</a>
 						<a href="#">
-							<a href="my-profile.html"><h3><strong>Son</strong></h3>
+							<a href="account-management.html"><h3><strong id="user-name"></strong></h3>
 						</a>
 						<a href="#">
-							<a href="sign-up-login-form/login.html" href="#"><h3>Logout</h3>
+							<a href="sign-up-login-form/login.html" href="#"><h3 id="logout">Logout</h3>
 						</a>
 						<!-- <p><a href="javascript:;" class="simpleCart_empty"><img src="./images/cart-c.png"  alt=""></a></p> -->
 						<div class="clearfix"> </div>
@@ -88,178 +89,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="header-top">
 		<div class="container">
 		<div class="head-top">
-			
-		<div class="top-nav">	
-			<ul class="header-in">
-				<li style="background-color: #615c85"><a style="color: #ffffff" href="index.html" >home</a></li>
-				<li><a href="about.html">about us</a> </li>
-				<li><a href="contact.html">contact us</a></li>
-				<li><a href="search.html">advance search</a></li>
-			</ul>	
-			  <ul class="megamenu skyblue" style="margin-left:15%">
-				      <li class="active grid"><a  href="#">fashion</a>
-					    <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="products.html">Accessories</a></li>
-										<li><a href="products.html">Bags</a></li>
-										<li><a href="products.html">Caps & Hats</a></li>
-										<!-- <li><a href="products.html">Hoodies & Sweatshirts</a></li>
-										<li><a href="products.html">Jackets & Coats</a></li>
-										<li><a href="products.html">Jeans</a></li>
-										<li><a href="products.html">Jewellery</a></li>
-										<li><a href="products.html">Jumpers & Cardigans</a></li>
-										<li><a href="products.html">Leather Jackets</a></li>
-										<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-										<li><a href="products.html">Loungewear</a></li> -->
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="products.html">Shirts</a></li>
-										<li><a href="products.html">Shoes, Boots & Trainers</a></li>
-										<li><a href="products.html">Shorts</a></li>
-										<li><a href="products.html">Suits & Blazers</a></li>
-										<!-- <li><a href="products.html">Sunglasses</a></li>
-										<li><a href="products.html">Sweatpants</a></li>
-										<li><a href="products.html">Swimwear</a></li>
-										<li><a href="products.html">Trousers & Chinos</a></li>
-										<li><a href="products.html">T-Shirts</a></li>
-										<li><a href="products.html">Underwear & Socks</a></li>
-										<li><a href="products.html">Vests</a></li> -->
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="products.html">Levis</a></li>
-										<li><a href="products.html">Persol</a></li>
-										<li><a href="products.html">Nike</a></li>
-										<li><a href="products.html">Edwin</a></li>
-										<!-- <li><a href="products.html">New Balance</a></li>
-										<li><a href="products.html">Jack & Jones</a></li>
-										<li><a href="products.html">Paul Smith</a></li>
-										<li><a href="products.html">Ray-Ban</a></li>
-										<li><a href="products.html">Wood Wood</a></li> -->
-									</ul>	
-								</div>												
-							</div>
-						  </div>
-						</div>
+			<div class="top-nav">
+				<ul class="header-in">
+					<li><a href="index.html" >home</a></li>
+					<li><a href="about.html">about us</a> </li>
+					<li><a href="contact.html">contact us</a></li>
+					<li><a href="search.html">advance search</a></li>
+					<li style="background-color: #615c85"><a style="color: #ffffff" href="products.html">our products</a></li>
+				</ul>
+				<ul class="megamenu skyblue category-menu" id="filters" style="margin-left:15%">
+					<li class="active grid">
+						<a class="category-name active" data-filter=".all" href="#">All</a>
 					</li>
-					<li><a   href="#">furniture & decor</a>
-					 <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="decor.html">Bed</a></li>
-										<li><a href="decor.html">Chest</a></li>
-										<li><a href="decor.html">Stool & Reider</a></li>
-										<!-- <li><a href="decor.html">Chair & Carpet</a></li>
-										<li><a href="decor.html">Curtain & Brix</a></li>
-										<li><a href="decor.html">Shelf</a></li>
-										<li><a href="decor.html">Desk</a></li>
-										<li><a href="decor.html">Sofa & Anson</a></li>
-										<li><a href="decor.html">Bench</a></li>
-										<li><a href="decor.html">Sink</a></li>
-										<li><a href="decor.html">Lamp</a></li> -->
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="decor.html">Armchair</a></li>
-										<li><a href="decor.html">Reider Bench</a></li>
-										<li><a href="decor.html">Carpet & Desk</a></li>
-										<!-- <li><a href="decor.html">Wardrobe & Lamp</a></li>
-										<li><a href="decor.html">Car seat</a></li>
-										<li><a href="decor.html">Lounger</a></li>
-										<li><a href="decor.html">Anson</a></li>
-										<li><a href="decor.html">Karlstad</a></li>
-										<li><a href="decor.html">Camilla & Wardrobe</a></li>
-										<li><a href="decor.html">Colton</a></li>
-										<li><a href="decor.html">Brix</a></li> -->
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-							<iframe src="https://player.vimeo.com/video/16878818"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-							</div>
-						  </div>
-						</div></li>
-				    <li class="grid"><a  href="#">mobiles & tablets</a>
-					   <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="mobile.html">Lenovo Tablets</a></li>
-										<li><a href="mobile.html">Motorola</a></li>
-										<li><a href="mobile.html">Samsung </a></li>
-										<!-- <li><a href="mobile.html">Htc Tab</a></li>
-										<li><a href="mobile.html">Dell & Compaq</a></li>
-										<li><a href="mobile.html">Asus Tablets</a></li>
-										<li><a href="mobile.html">Microsoft</a></li>
-										<li><a href="mobile.html">Moto E & Moto G</a></li>
-										<li><a href="mobile.html">Intex</a></li>
-										<li><a href="mobile.html">Hauwei Lumia</a></li>
-										<li><a href="mobile.html">Loungewear</a></li> -->
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="mobile.html">Asus Zenfone 2</a></li>
-										<li><a href="mobile.html">Nikon & Sony</a></li>
-										<li><a href="mobile.html">Shorts</a></li>
-										<!-- <li><a href="mobile.html">Olymplus</a></li>
-										<li><a href="mobile.html">Sunglasses</a></li>
-										<li><a href="mobile.html">Samsung Nx</a></li>
-										<li><a href="mobile.html">Printers & Monitors</a></li>
-										<li><a href="mobile.html">Routers</a></li>
-										<li><a href="mobile.html">Data Cards</a></li>
-										<li><a href="mobile.html">Mouse & Keyboard</a></li>
-										<li><a href="mobile.html">Ink Cartridges</a></li> -->
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="col1">
-								<iframe src="https://player.vimeo.com/video/8118831"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-							</div>										
-							</div>
-						  </div>
-						</div>
-			    </li>
-						 <li class="grid"><a  href="health.html">health & beauty</a>
-					  
-			    </li>		
-			  </ul> 
-				</div>
-		
-				<div class="clearfix"> </div>
+					<div class="category-template hidden">
+						<li class="active grid">
+							<a class="category-name" data-filter="Category" href="#">Category</a>
+						</li>
+					</div>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
 		</div>
 	</div>
 </div>
 	<div class="container">
 		<div class="product">
-		<h2 class="new">NEW ARRIVALS</h2>
-		<div class="pink">
-			<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
+			<h2 class="new">NEW ARRIVALS</h2>
+			<div class="pink">
+					
+				<div class="product-template hidden">
+					<div class="col-md-3 box-in-at products">
+						<div class=" grid_box portfolio-wrapper">		
+							<a href="single.html" class="product-url"> <img src="" class="img-responsive product-image" alt="">
+								<div class="zoom-icon">
+										 		
 									<ul class="in-by">
 										<li><h5>sizes:</h5></li>                     
 										<li><span>S</span></li>
@@ -269,429 +133,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><span>XL</span></li>
 										<li><span> XXL</span></li>
 									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
+								
+								
+									<ul class="in-by-color">
+										<li><h5>colors:</h5></li>                   
+										<li><span > </span></li>
+										<li><span class="color"> </span></li>
+										<li><span class="color1"> </span></li>
+										<li><span class="color2"> </span></li>
+										<li><span class="color3"> </span></li>
+										
+									</ul>
+								
+								</div> 
+							</a> 	
+				        </div>
+						<!---->
 						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
+							<a href="#" class="cup item_add"><span class="item_price" > <i> </i> </span></a>					
 						</div>
-					<!---->
+						<!---->
+					</div>
 				</div>
 
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa1.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa2.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa3.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
 				<div class="clearfix"> </div>
-		</div>
-		<div class="pink">
-			<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa4.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
+			</div>
 
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa5.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa6.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa7.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="clearfix"> </div>
-		</div>
-		<div class="pink">
-			<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa8.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa3.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-
-			
-				<div class="col-md-3 box-in-at">
-			<div class=" grid_box portfolio-wrapper">		
-							 <a href="single.html" > <img src="images/fa6.jpg" class="img-responsive" alt="">
-							 	<div class="zoom-icon">
-							 		
-									<ul class="in-by">
-										<li><h5>sizes:</h5></li>                     
-										<li><span>S</span></li>
-										<li><span>XS</span></li>
-										<li><span>M</span></li>
-										<li><span> L</span></li>
-										<li><span>XL</span></li>
-										<li><span> XXL</span></li>
-									</ul>
-					
-					
-						<ul class="in-by-color">
-							<li><h5>colors:</h5></li>                   
-							<li><span > </span></li>
-							<li><span class="color"> </span></li>
-							<li><span class="color1"> </span></li>
-							<li><span class="color2"> </span></li>
-							<li><span class="color3"> </span></li>
-							
-						</ul>
-					
-						</div> </a> 	
-		           </div>
-				<!---->
-						<div class="grid_1 simpleCart_shelfItem">
-							<a href="#" class="cup item_add"><span class=" item_price" >123 $ <i> </i> </span></a>					
-						</div>
-					<!---->
-				</div>
-				<div class="clearfix"> </div>
-		</div>
+		
 		</div>
 		<!---->	
-</div>
+	</div>
 	<!--footer-->
 	<div class="footer">
 		<div class="container">
@@ -749,6 +220,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	</div>
+
+<script type="text/javascript" src="js/my-script.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+        //Load product items
+		$.ajax({
+			url 		: 		"http://localhost:8042/api/get_all_products",
+			type 		: 		'GET',
+			dataType 	: 		'json',
+			async		: 		false,
+
+			success 	: 		function(data) {
+				console.log(data);
+                var productLength = data.length;
+                for (var i = 0; i < productLength; i++) {
+                    var productTemplate = $('.product-template').clone();
+                    productTemplate.removeClass('hidden');
+                    (productTemplate.find('.products')).addClass('all');
+
+                    var categoryId = data[i]._category;
+                    var slug;
+                    $.ajax({
+						url 		: 		'http://localhost:8042/api/category/' + categoryId,
+						type 		: 		'GET',
+						dataType 	: 		'json',
+						async		: 		false,
+
+					}).done(function(data) {
+						// console.log(data.slug);
+						slug = data.slug;
+					});
+                    (productTemplate.find('.products')).addClass(slug);
+                    productTemplate.find('.product-image').attr('src', data[i].image_link);
+                    productTemplate.find('.item_price').html(data[i].price);
+                    productTemplate.find('.product-url').attr('href' ,'single.html?id=' + data[i]._id);
+                    
+                    
+                    
+                    $('.pink').append(productTemplate.html());
+                }
+			}
+		});
+	});
+</script>
 
 </body>
 </html>

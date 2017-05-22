@@ -184,3 +184,8 @@ footer{
   font-weight: 1000;
   font-size: 30px;
 }
+
+#login-failed{
+  color: white;
+  text-align: center;
+}

@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
+<!--   <meta charset="UTF-8"> -->
   <title>Sign-Up/Login Form</title>
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+ <!--  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> -->
+ <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <!--  <script>
 
-  
-      <link rel="stylesheet" href="css/style.css">
+  $(document).ready(function(){
+      $("#test").click(function(){
+          event.preventDefault();
+        var response;
+        var data = {
+          "name": "son",
+          "username": "leminhson199656789123",
+          "password": "123475787890123",
+          "email": "abcdsdsd123d@gmail.com",
+          "avatar_link": "abc.jpg",
+          "gender": "male",
+          "date_of_birth": "1996-04-02T17:00:00.000Z",
+          "role": "member"
+        };
+        $.ajax({
+            url: 'http://localhost:8042/api/sign_up',
+            type: 'POST',
+            data: JSON.stringify(data),
+            dataType : "json",
+            contentType: "application/json; charset=utf-8",
+            success: function(result) {
+                response = result;
+                alert('success');
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                response = "err--" + XMLHttpRequest.status + " -- " + XMLHttpRequest.statusText;
+                alert(response);
+            }
+        });
+    });
+});
+</script> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- <script type="text/javascript">
+    $("#test").click(function(event){
+    event.preventDefault();
+    var response;
+    var data = {
+      'name': $('.first-name').val() + ' ' + $('.last-name').val(),
+      'username': $('.new-username').val(),
+      'email': $('.new-email').val(),
+      'password': $('.new-password'),
+      'role': 'member',
+      'avatar_link': '',
+      'data_of_birth': '1900-01-01',
+      'gender': 'male'
+    };
+    $.ajax({
+        url: 'https://localhost:8042/api/sign_up',
+        type: 'POST',
+        data: JSON.stringify(data),
+        dataType : "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(result) {
+           alert('success');
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert('error');
+        }
+    });
+  });
+</script> -->
 
-  
 </head>
-
 <body>
   <div class="form">
     
@@ -25,39 +86,46 @@
               <label>
                 First Name<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input class="first-name" type="text" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
               <label>
                 Last Name<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input class="last-name" type="text"required autocomplete="off"/>
             </div>
           </div>
+
+           <div class="field-wrap">
+              <label>
+                username<span class="req">*</span>
+              </label>
+              <input class="new-username" type="text"required autocomplete="off"/>
+            </div>
 
           <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input class="new-email" type="email"required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input class="new-password" type="password"required autocomplete="off"/>
           </div>
           
-          <button type="submit" class="button button-block"/>Get Started</button>
+          <button id="submit-register" class="button button-block"/>Get Started</button>
           
           </form>
 
         </div>
       <a href="login.html"><h3>Already had an account? Click here to login</h3></a>
-</div> <!-- /form -->
-
+</div>
+<button id="test">test</button>
 </body>
 <footer>Copyright@2017 - Group 1. All rights reserved</footer>
 </html>

@@ -23,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--fonts-->
 <link href='https://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
 <!--//fonts-->
-
+	<script type="text/javascript" src="js/callAPI.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -62,10 +62,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="cart box_1">
 						<a href="#">
-							<a href="sign-up-login-form/login.html"><h3>Login</h3></a>
+							<a href="sign-up-login-form/login.html"><h3 id="login">Login</h3></a>
 						</a>
 						<a href="#">
-							<a href="sign-up-login-form/register.html"><h3>Register</h3>
+							<a href="sign-up-login-form/register.html"><h3 id="register">Register</h3>
 						</a>
 						<a href="checkout.html">
 							<h3> <!-- <div class="total"> -->
@@ -74,10 +74,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</h3>
 						</a>
 						<a href="#">
-							<a href="my-profile.html"><h3><strong>Son</strong></h3>
+							<a href="account-management.html"><h3><strong id="user-name"></strong></h3>
 						</a>
 						<a href="#">
-							<a href="sign-up-login-form/login.html" href="#"><h3>Logout</h3>
+							<a href="sign-up-login-form/login.html" href="#"><h3 id="logout">Logout</h3>
 						</a>
 						<!-- <p><a href="javascript:;" class="simpleCart_empty"><img src="./images/cart-c.png"  alt=""></a></p> -->
 						<div class="clearfix"> </div>
@@ -98,138 +98,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li><a href="about.html">about us</a> </li>
 				<li><a href="contact.html">contact us</a></li>
 				<li><a href="search.html">advance search</a></li>
+				<li><a href="products.html">our products</a></li>
 			</ul>		
-			  <ul class="megamenu skyblue" style="margin-left:15%">
-				      <li class="active grid"><a  href="#">fashion</a>
-					    <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="products.html">Accessories</a></li>
-										<li><a href="products.html">Bags</a></li>
-										<li><a href="products.html">Caps & Hats</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="products.html">Shirts</a></li>
-										<li><a href="products.html">Shoes, Boots & Trainers</a></li>
-										<li><a href="products.html">Shorts</a></li>
-										<li><a href="products.html">Suits & Blazers</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="products.html">Levis</a></li>
-										<li><a href="products.html">Persol</a></li>
-										<li><a href="products.html">Nike</a></li>
-										<li><a href="products.html">Edwin</a></li>
-									</ul>	
-								</div>												
-							</div>
-						  </div>
-						</div>
-					</li>
-					<li><a   href="#">furniture & decor</a>
-					 <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="decor.html">Bed</a></li>
-										<li><a href="decor.html">Chest</a></li>
-										<li><a href="decor.html">Stool & Reider</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="decor.html">Armchair</a></li>
-										<li><a href="decor.html">Reider Bench</a></li>
-										<li><a href="decor.html">Carpet & Desk</a></li>
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-							<iframe src="https://player.vimeo.com/video/16878818"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-							</div>
-						  </div>
-						</div></li>
-				    <li class="grid"><a  href="#">mobiles & tablets</a>
-					   <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="mobile.html">Lenovo Tablets</a></li>
-										<li><a href="mobile.html">Motorola</a></li>
-										<li><a href="mobile.html">Samsung </a></li>
-										
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="mobile.html">Asus Zenfone 2</a></li>
-										<li><a href="mobile.html">Nikon & Sony</a></li>
-										<li><a href="mobile.html">Shorts</a></li>
-										
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="col1">
-								<iframe src="https://player.vimeo.com/video/8118831"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-							</div>										
-							</div>
-						  </div>
-						</div>
-			    </li>
-						 <li class="grid"><a  href="health.html">health & beauty</a>
-					  
-			    </li>		
-				<li><a  href="#">tvs, gaming & cameras</a>
-				  <div class="megapanel">
-						<div class="row">
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="mobile.html">Lenovo Tablets</a></li>
-										<li><a href="mobile.html">Motorola</a></li>
-										
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="mobile.html">Asus Zenfone 2</a></li>
-										<li><a href="mobile.html">Nikon & Sony</a></li>
-										<li><a href="mobile.html">Shorts</a></li>
-										
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="col1">
-								<iframe src="https://player.vimeo.com/video/8118831"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-							</div>										
-							</div>
-						  </div>
-						</div></li>
-			
-				
-			  </ul> 
-				</div>
+			  <!--<ul class="megamenu skyblue" style="margin-left:15%">-->
+				      <!--<li class="active grid"><a  href="#">fashion</a>-->
 
+					<!--</li>-->
+					<!--<li><a   href="#">furniture & decor</a>-->
+					<!--</li>-->
+				    <!--<li class="grid"><a  href="#">mobiles & tablets</a>-->
+			    	<!--</li>-->
+						 <!--<li class="grid"><a  href="health.html">health & beauty</a>-->
+					  <!---->
+			    <!--</li>-->
+			  <!--</ul> -->
+				</div>
 				<div class="clearfix"> </div>
 		</div>
 		</div>
@@ -239,20 +122,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 	<div class="check">	 
 			 <div class="col-md-3 cart-total">
-			 <a class="continue" href="#">Continue to basket</a>
+			 <a class="continue" href="products.html">Continue to basket</a>
 			 <div class="price-details">
 				 <h3>Price Details</h3>
-				 <span>Total</span>
-				 <span class="total1">6200.00</span>
-				 <span>Discount</span>
-				 <span class="total1">---</span>
-				 <span>Delivery Charges</span>
-				 <span class="total1">150.00</span>
+				 <!--<span>Total</span>-->
+				 <!--<span class="total1 money"></span>-->
 				 <div class="clearfix"></div>				 
 			 </div>	
 			 <ul class="total_price">
 			   <li class="last_price"> <h4>TOTAL</h4></li>	
-			   <li class="last_price"><span>6350.00</span></li>
+			   <li class="last_price money"><span>6350.00</span></li>
 			   <div class="clearfix"> </div>
 			 </ul>
 			
@@ -260,75 +139,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="clearfix"></div>
 			 <a class="order" href="online-payment.html">Place Order</a>
 			 <div class="total-item">
-				 <h3>OPTIONS</h3>
-				 <h4>COUPONS</h4>
-				 <a class="cpns" href="#">Apply Coupons</a>
-				 <p><a href="#">Log In</a> to use accounts - linked coupons</p>
 			 </div>
 			</div>
 		 <div class="col-md-9 cart-items">
-			 <h1>My Shopping Bag (2)</h1>
-				<script>$(document).ready(function(c) {
-					$('.close1').on('click', function(c){
-						$('.cart-header').fadeOut('slow', function(c){
-							$('.cart-header').remove();
-						});
-						});	  
-					});
-			   </script>
-			 <div class="cart-header">
-				 <div class="close1"> </div>
-				 <div class="cart-sec simpleCart_shelfItem">
-						<div class="cart-item cyc">
-							 <img src="images/pic1.jpg" class="img-responsive" alt=""/>
-						</div>
-					   <div class="cart-item-info">
-						<h3><a href="#">Mountain Hopper(XS R034)</a><span>Model No: 3578</span></h3>
-						<ul class="qty">
-							<li><p>Size : 5</p></li>
-							<li><p>Qty : 1</p></li>
-						</ul>
-						
-							 <div class="delivery">
-							 <p>Service Charges : Rs.100.00</p>
-							 <span>Delivered in 2-3 bussiness days</span>
-							 <div class="clearfix"></div>
-				        </div>	
-					   </div>
-					   <div class="clearfix"></div>
-											
-				  </div>
-			 </div>
-			 <script>$(document).ready(function(c) {
-					$('.close2').on('click', function(c){
-							$('.cart-header2').fadeOut('slow', function(c){
-						$('.cart-header2').remove();
-					});
-					});	  
-					});
-			 </script>
-			 <div class="cart-header2">
-				 <div class="close2"> </div>
-				  <div class="cart-sec simpleCart_shelfItem">
-						<div class="cart-item cyc">
-							 <img src="images/pic2.jpg" class="img-responsive" alt=""/>
-						</div>
-					   <div class="cart-item-info">
-						<h3><a href="#">Mountain Hopper(XS R034)</a><span>Model No: 3578</span></h3>
-						<ul class="qty">
-							<li><p>Size : 5</p></li>
-							<li><p>Qty : 1</p></li>
-						</ul>
-							 <div class="delivery">
-							 <p>Service Charges : Rs.100.00</p>
-							 <span>Delivered in 2-3 bussiness days</span>
-							 <div class="clearfix"></div>
-				        </div>	
-					   </div>
-					   <div class="clearfix"></div>
-											
-				  </div>
-			  </div>		
+			 <h1>My Shopping Bag</h1>
 		 </div>
 		 
 		
@@ -377,23 +191,80 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<footer class="footer-class">Copyright@2017 - Group 1. All rights reserved</footer>
 		<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
+			$(document).ready(function() {
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 	</div>
+<script>
+    $.ajax({
+        url 			: 		'http://localhost:8042/api/orders/'+ docCookies.getItem('username') + '?token=' + docCookies.getItem('access-token'),
+        type 			: 		'GET',
+        dataType 		: 		'json',
+        async: false,
+        success 			: 		function(data) {
+            console.log(data);
 
+            var dataLength = data.length;
+            var sum = 0;
+
+            for (var i = 0; i < dataLength; i++) {
+                sum = sum + parseInt(data[i].product_price);
+                var item = 	 '<div class="cart-header cart-header-'+'item' + i +'">'+
+                    '<div class="close1 item' + i +'"></div>'+
+                    '<div class="cart-sec simpleCart_shelfItem">'+
+                    '<div class="cart-item cyc">'+
+                    '<img src="'+data[i].product_image + '" class="img-responsive" alt=""/>'+
+                    '</div>' +
+                    '<div class="cart-item-info">' +
+                    '<h3><a href="#">'+data[i].product_name+ '</a><span id="order_id">'+ data[i].order_id + '</span></h3>'+
+                '<ul class="qty">' +
+                    '<li><p>Size : '+ data[i].product_size +'</p></li>'+
+                	'<li><p>Qty : 1</p></li>' +
+                    '<li><p>Price : '+ data[i].product_price +' $</p></li>' +
+                '</ul>'+
+                '<div class="delivery">'+
+                    '<p></p>'+
+                '<span>'+ data[i].order_status +'</span>'+
+                '<div class="clearfix"></div>'+
+                    '</div>'+
+                    '</div>' +
+                    '<div class="clearfix"></div>'+
+                    '</div>'+
+                    '</div>'
+                $('.cart-items').append(item);
+            }
+            $('.money').text(sum + "$");
+        }
+    });
+
+    //delete item
+    $(document).click(function(event) {
+        var order_id;
+        var item = $(event.target).attr("class") + "";
+        item = item.substring(7);
+        $('.cart-header').each(function () {
+			if ($(this).has('.' + item)){
+			    order_id = $('.cart-header-'+ item).find('#order_id').text();
+			    console.log(order_id);
+			    $('.cart-header-'+ item).remove();
+                //delete item in database
+                $.ajax({
+                    url 			: 		'http://localhost:8042/api/order/' + order_id +'?token=' + docCookies.getItem('access-token'),
+                    type 			: 		'DELETE',
+                    dataType 		: 		'json',
+                    async: false,
+                    success: function(result) {
+                        console.log(deleted);
+                    },
+                });
+                return false;
+			}
+        });
+    });
+</script>
 </body>
 </html>
