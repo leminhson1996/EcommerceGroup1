@@ -36,7 +36,7 @@ function getProductByFilter(){
 	
 	let size = $('input[name=size]:checked', '#filterForm').val();
 
-	$.get("http://localhost:8042/api/filter_product_by_size/"+ size,
+	$.get("https://thawing-forest-86527.herokuapp.com/api/filter_product_by_size/"+ size,
 		function(data, status) {
 			showProducts(data);
 			toogleActiveCategory("all_categories");
@@ -62,12 +62,12 @@ var prevActiveCategory = "all_categories";
 function getProductByCategory() {
 	//alert("Product Categories" + prevActiveCategory);
 	if (prevActiveCategory === "all_categories") {
-		$.get("http://localhost:8042/api/get_all_products",
+		$.get("https://thawing-forest-86527.herokuapp.com/api/get_all_products",
 			function(data, status) {
 				showProducts(data);
 			});
 	} else {
-		$.get("http://localhost:8042/api/filter_product_by_category/"+ prevActiveCategory,
+		$.get("https://thawing-forest-86527.herokuapp.com/api/filter_product_by_category/"+ prevActiveCategory,
 			function(data, status) {
 				showProducts(data);
 			});
@@ -83,7 +83,7 @@ function toogleActiveCategory(categoryName) {
 
 function updateCategoryList() {
 	//alert("test123");
-	$.get("http://localhost:8042/api/all_categories",
+	$.get("https://thawing-forest-86527.herokuapp.com/api/all_categories",
 		function(data, status) {
 			//alert("Update categories list " + status);
 			
@@ -117,7 +117,7 @@ $(document).ready(function(){
 	    /* Validations go here */
 	    let keyword = $('input[name=searchText]', '#searchByKeyword').val();
 		//alert("keyword"+keyword);
-		$.get("http://localhost:8042/api/filter_product_by_name/"+ keyword,
+		$.get("https://thawing-forest-86527.herokuapp.com/api/filter_product_by_name/"+ keyword,
 			function(data, status) {
 				toogleActiveCategory("all_categories");
 				showProducts(data);

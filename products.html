@@ -228,7 +228,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         //Load product items
 		$.ajax({
-			url 		: 		"http://localhost:8042/api/get_all_products",
+			url 		: 		"https://thawing-forest-86527.herokuapp.com/api/get_all_products",
 			type 		: 		'GET',
 			dataType 	: 		'json',
 			async		: 		false,
@@ -244,7 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     var categoryId = data[i]._category;
                     var slug;
                     $.ajax({
-						url 		: 		'http://localhost:8042/api/category/' + categoryId,
+						url 		: 		'https://thawing-forest-86527.herokuapp.com/api/category/' + categoryId,
 						type 		: 		'GET',
 						dataType 	: 		'json',
 						async		: 		false,

@@ -17,7 +17,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     // Get categories menu
     $.ajax({
-        url 		: 		"http://localhost:8042/api/all_categories",
+        url 		: 		"https://thawing-forest-86527.herokuapp.com/api/all_categories",
         type 		: 		'GET',
         dataType 	: 		'json',
 

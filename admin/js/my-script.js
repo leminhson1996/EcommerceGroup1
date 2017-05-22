@@ -33,7 +33,7 @@ var token = "?token=" + docCookies.getItem('access-token');
 $(document).ready(function(){
     //if not an admin, can't access admin page
     $.ajax({
-        url: 'http://localhost:8042/api/users/username?token=' + docCookies.getItem('access-token'),
+        url: 'https://thawing-forest-86527.herokuapp.com//api/users/username?token=' + docCookies.getItem('access-token'),
         type: 'POST',
         data: JSON.stringify({"username": docCookies.getItem('username')}),
         dataType : "json",
@@ -92,7 +92,7 @@ function hide(){
 		$(".form-edit").removeClass("col-lg-6");
 	};
 function updateAdminList() {
-	$.get("http://localhost:8042/api/users"+token,
+	$.get("https://thawing-forest-86527.herokuapp.com/api/users"+token,
 		function(data, status) {
 		console.log("Update admin list " + status);
 		$("#member-list").html("");
@@ -132,7 +132,7 @@ function updateMemberBtn() {
         allUser.forEach(function(user) {
             if (user.username == $(thisBtn).parent().parent().children().eq(1).text() ){
                 $.ajax({
-                    url: 'http://localhost:8042/api/users/'+user._id+token,
+                    url: 'https://thawing-forest-86527.herokuapp.com//api/users/'+user._id+token,
                     type: 'DELETE',
                     success: function(result) {
                         alert('Đã xóa user');
@@ -169,7 +169,7 @@ function updateProductBtn(nameNew, priceNew, categoryNew, imageSrc){
         allProduct.forEach(function(product) {
             if (product.name == $(thisBtn).parent().parent().parent().children().eq(2).text() ){
                 $.ajax({
-                    url: 'http://localhost:8042/api/remove_a_product/'+product._id+token,
+                    url: 'https://thawing-forest-86527.herokuapp.com//api/remove_a_product/'+product._id+token,
                     type: 'DELETE',
                     success: function(result) {
                         alert('This product has been deleted!!!');
@@ -229,7 +229,7 @@ function updateCategoryBtn(){
     $(".delete-category").click(function(){
         var id = finCategoryByName($(this).parent().parent().children().eq(1).text());
         $.ajax({
-            url: 'http://localhost:8042/api/category/'+id+token,
+            url: 'https://thawing-forest-86527.herokuapp.com//api/category/'+id+token,
             type: 'DELETE',
             success: function(result) {
                 alert('This category has been deleted!!!');
@@ -244,7 +244,7 @@ function updateCategoryBtn(){
     })
 }
 function updateCategoryList(){
-    $.get("http://localhost:8042/api/all_categories"+token,
+    $.get("https://thawing-forest-86527.herokuapp.com/api/all_categories"+token,
         function(data, status) {
             console.log("Update category list " + status);
             $("#product-category").html("");
@@ -279,7 +279,7 @@ function updateProduct(nameNew, priceNew, categoryNew, imageSrc,colorNew, sizeNe
         if (product.name == productName)
         {
             $.ajax({
-                url: 'http://localhost:8042/api/update_a_product/'+product._id+token,
+                url: 'https://thawing-forest-86527.herokuapp.com//api/update_a_product/'+product._id+token,
                 type: 'PUT',
                 data: JSON.stringify({
                     name: nameNew,
@@ -314,7 +314,7 @@ function setMemberRole(username, role){
 		{
 		    check = true;
             $.ajax({
-                url: 'http://localhost:8042/api/users/'+user._id+token,
+                url: 'https://thawing-forest-86527.herokuapp.com//api/users/'+user._id+token,
                 type: 'PUT',
                 data: JSON.stringify({role: role}),
                 dataType : "json",
@@ -335,7 +335,7 @@ function setMemberRole(username, role){
 	    alert("Username không tồn tại");
 }
 function updateProductList() {
-    $.get("http://localhost:8042/api/get_all_products"+token,
+    $.get("https://thawing-forest-86527.herokuapp.com/api/get_all_products"+token,
         function(data, status) {
             console.log("Update product list " + status);
             $("#product-list").html("");
@@ -371,7 +371,7 @@ function updateProductList() {
 }
 function addProduct(nameNew, priceNew, categoryNew, imageSrc,colorNew, sizeNew, brandNew, saleNew, desNew){
     $.ajax({
-        url: 'http://localhost:8042/api/add_new_product/'+token,
+        url: 'https://thawing-forest-86527.herokuapp.com//api/add_new_product/'+token,
         type: 'PUT',
         data: JSON.stringify({
             name: nameNew,
@@ -399,7 +399,7 @@ function addProduct(nameNew, priceNew, categoryNew, imageSrc,colorNew, sizeNew, 
 }
 function addCategory(name, slug, des){
     $.ajax({
-        url: 'http://localhost:8042/api/category/'+token,
+        url: 'https://thawing-forest-86527.herokuapp.com//api/category/'+token,
         type: 'POST',
         data: JSON.stringify({
             name: name,
@@ -421,7 +421,7 @@ function addCategory(name, slug, des){
     });
 }
 function updateOrderLists(){
-    $.get("http://localhost:8042/api/all_orders"+token,
+    $.get("https://thawing-forest-86527.herokuapp.com/api/all_orders"+token,
         function(data, status) {
             console.log("Update orders list " + status);
             $("#order-list").html("");

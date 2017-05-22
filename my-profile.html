@@ -448,7 +448,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
          //Update user information in database
         $.ajax({
-            url: 'http://localhost:8042/api/users/username/' + docCookies.getItem('username') + '?token=' + docCookies.getItem('access-token'),
+            url: 'https://thawing-forest-86527.herokuapp.com//api/users/username/' + docCookies.getItem('username') + '?token=' + docCookies.getItem('access-token'),
             type: 'PUT',
             data: JSON.stringify(data),
             dataType : "json",
