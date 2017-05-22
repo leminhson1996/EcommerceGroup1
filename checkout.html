@@ -201,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <script>
     $.ajax({
-        url 			: 		'https://thawing-forest-86527.herokuapp.com//api/orders/'+ docCookies.getItem('username') + '?token=' + docCookies.getItem('access-token'),
+        url 			: 		'https://thawing-forest-86527.herokuapp.com/api/orders/'+ docCookies.getItem('username') + '?token=' + docCookies.getItem('access-token'),
         type 			: 		'GET',
         dataType 		: 		'json',
         async: false,
@@ -253,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			    $('.cart-header-'+ item).remove();
                 //delete item in database
                 $.ajax({
-                    url 			: 		'https://thawing-forest-86527.herokuapp.com//api/order/' + order_id +'?token=' + docCookies.getItem('access-token'),
+                    url 			: 		'https://thawing-forest-86527.herokuapp.com/api/order/' + order_id +'?token=' + docCookies.getItem('access-token'),
                     type 			: 		'DELETE',
                     dataType 		: 		'json',
                     async: false,

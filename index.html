@@ -529,7 +529,7 @@
 	  });
 
         $.ajax({
-            url: 'https://thawing-forest-86527.herokuapp.com//api/users/username?token=' + docCookies.getItem('access-token'),
+            url: 'https://thawing-forest-86527.herokuapp.com/api/users/username?token=' + docCookies.getItem('access-token'),
             type: 'POST',
             data: JSON.stringify({"username": docCookies.getItem('username')}),
             dataType : "json",

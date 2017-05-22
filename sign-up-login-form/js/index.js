@@ -62,7 +62,7 @@ $(document).ready(function(){
           "role": "member"
         };
         $.ajax({
-            url: 'https://thawing-forest-86527.herokuapp.com//api/sign_up',
+            url: 'https://thawing-forest-86527.herokuapp.com/api/sign_up',
             type: 'POST',
             data: JSON.stringify(data),
             dataType : "json",
@@ -86,7 +86,7 @@ $(document).ready(function(){
             "password": $('.password').val()
         };
         $.ajax({
-            url: 'https://thawing-forest-86527.herokuapp.com//api/login',
+            url: 'https://thawing-forest-86527.herokuapp.com/api/login',
             type: 'POST',
             data: JSON.stringify(data),
             dataType : "json",
