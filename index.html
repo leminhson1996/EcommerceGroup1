@@ -398,7 +398,7 @@
 
 		//Load banner
 		$.ajax({
-			url 		: 		"http://localhost:8042/api/get_limit_products/1",
+			url 		: 		"https://localhost:8042/api/get_limit_products/1",
 			type 		: 		'GET',
 			dataType 	: 		'json',
 			async		: 		false,
@@ -425,7 +425,7 @@
 
 		//Load product items
 		$.ajax({
-			url 		: 		"http://localhost:8042/api/get_limit_products/8",
+			url 		: 		"https://localhost:8042/api/get_limit_products/8",
 			type 		: 		'GET',
 			dataType 	: 		'json',
 			async		: 		false,
@@ -451,7 +451,7 @@
 		//Load hot trends
 
 		$.ajax({
-			url 		: 		"http://localhost:8042/api/get_limit_products/3",
+			url 		: 		"https://localhost:8042/api/get_limit_products/3",
 			type 		: 		'GET',
 			dataType 	: 		'json',
 			async		: 		false,
@@ -529,7 +529,7 @@
 	  });
 
         $.ajax({
-            url: 'http://localhost:8042/api/users/username?token=' + docCookies.getItem('access-token'),
+            url: 'https://localhost:8042/api/users/username?token=' + docCookies.getItem('access-token'),
             type: 'POST',
             data: JSON.stringify({"username": docCookies.getItem('username')}),
             dataType : "json",
