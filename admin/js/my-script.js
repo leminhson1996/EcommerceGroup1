@@ -540,5 +540,17 @@ $(document).ready(function(){
 		addProductOrEdit = true;
 		show();
 	})
+    $("#export-excel").click(function(event) {
+        event.preventDefault();
+
+        $('.product-report').table2excel({
+                name: "Excel Document Name",
+                filename: "Product",
+                fileext: ".xls",
+                exclude_img: false,
+                exclude_links: false,
+                exclude_inputs: true
+        });
+    });
 });
 
