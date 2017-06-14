@@ -132,13 +132,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>	
 			 <ul class="total_price">
 			   <li class="last_price"> <h4>TOTAL</h4></li>	
-			   <li class="last_price money"><span>6350.00</span></li>
+			   <li class="last_price money"><span id= "amount">1000</span></li>
 			   <div class="clearfix"> </div>
 			 </ul>
 			
 			 
 			 <div class="clearfix" style="margin-top: 10px"></div>
-				 <div id="paypal-button-container"></div>
+				 <div id="paypal-button"></div>
 			 <div class="total-item">
 			 </div>
 			</div>
@@ -267,45 +267,110 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     });
 </script>
-<script>
-    paypal.Button.render({
 
-        env: 'sandbox', // sandbox | production
+<!-- Load PayPal's checkout.js Library. -->
+<script src="https://www.paypalobjects.com/api/checkout.js" data-version-4 log-level="warn"></script>
 
-        // PayPal Client IDs - replace with your own
-        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-        client: {
-            sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
-            production: 'AQk1BmhApgdZJfUqj_Ra0zx4xP_zz849_Ts1ysapj3tDO63flkGjxTQjrNxFdYE6F1hbINJxSK2HNGh4'
-        },
+<!-- Load the client component. -->
+<script src="https://js.braintreegateway.com/web/3.17.0/js/client.min.js"></script>
 
-        // Show the buyer a 'Pay Now' button in the checkout flow
-        commit: true,
+<!-- Load the PayPal Checkout component. -->
+<script src="https://js.braintreegateway.com/web/3.17.0/js/paypal-checkout.min.js"></script>
+<script type="text/javascript">
 
-        // payment() is called when the button is clicked
-        payment: function(data, actions) {
+	
+	$(document).ready(function(){
+		$.get("https://thawing-forest-86527.herokuapp.com/api/get_token", function(data, status){
+		console.log(data);
+		braintree.client.create({
+		  authorization: data
+		}, function (clientErr, clientInstance) {
 
-            // Make a call to the REST api to create the payment
-            return actions.payment.create({
-                transactions: [
-                    {
-                        amount: { total: '0.01', currency: 'USD' }
-                    }
-                ]
-            });
-        },
+		  // Stop if there was a problem creating the client.
+		  // This could happen if there is a network error or if the authorization
+		  // is invalid.
+		  if (clientErr) {
+		    console.error('Error creating client:', clientErr);
+		    return;
+		  }
 
-        // onAuthorize() is called when the buyer approves the payment
-        onAuthorize: function(data, actions) {
+		  // Create a PayPal Checkout component.
+		  braintree.paypalCheckout.create({
+		    client: clientInstance
+		  }, function (paypalCheckoutErr, paypalCheckoutInstance) {
 
-            // Make a call to the REST api to execute the payment
-            return actions.payment.execute().then(function() {
-                window.alert('Payment Complete!');
-            });
-        }
+		    // Stop if there was a problem creating PayPal Checkout.
+		    // This could happen if there was a network error or if it's incorrectly
+		    // configured.
+		    if (paypalCheckoutErr) {
+		      console.error('Error creating PayPal Checkout:', paypalCheckoutErr);
+		      return;
+		    }
 
-    }, '#paypal-button-container');
+		    // Set up PayPal with the checkout.js library
+		    paypal.Button.render({
+		      env: 'sandbox', // or 'sandbox'
 
+		      payment: function () {
+		      	console.log("amount: ",$("#amount").text());
+		        return paypalCheckoutInstance.createPayment({
+		          flow: 'checkout', // Required
+		          amount: $("#amount").text(), // Required
+		          currency: 'USD', // Required
+		          
+		        });
+		      },
+
+		      onAuthorize: function (data, actions) {
+		      	console.log(data);
+		        return paypalCheckoutInstance.tokenizePayment(data)
+		          .then(function (payload) {
+		            // Submit `payload.nonce` to your server
+		            console.log(payload);
+		            $.ajax({
+				        url: 'https://thawing-forest-86527.herokuapp.com/api/payment',
+				        type: 'POST',
+				        data: JSON.stringify({
+		            		'paymentMethodNonce': payload.nonce,
+		            		'amount': $("#amount").text()
+		            	}),
+				        dataType : "json",
+				        contentType: "application/json; charset=utf-8",
+				        credentials: 'include',
+				        success: function(result) {
+				            console.log(result);
+				            alert("Giao dịch thành công");
+				            
+				        },
+				        error: function (XMLHttpRequest, textStatus, errorThrown) {
+				            alert("Giao dịch thất bại");
+				            console.log(errorThrown + "   " + textStatus);
+				        }
+				    });
+
+		          
+		         });
+		    },
+
+		      onCancel: function (data) {
+		        console.log('checkout.js payment cancelled', JSON.stringify(data, 0, 2));
+		      },
+
+		      onError: function (err) {
+		        console.error('checkout.js error', err);
+		      }
+		    }, '#paypal-button').then(function () {
+		      // The PayPal button will be rendered in an html element with the id
+		      // `paypal-button`. This function will be called when the PayPal button
+		      // is set up and ready to be used.
+		    });
+
+		  });
+
+		});
+		})
+		
+	})
 </script>
 </body>
 </html>

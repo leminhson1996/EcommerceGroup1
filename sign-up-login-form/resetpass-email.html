@@ -8,27 +8,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-  
 </head>
 
 <body>
   <div class="form">
-      <h1>Welcome Back!</h1>
+      <h1>Enter your email to reset password</h1>
       <div id="login">   
-          <form action="#" method="post">
+          <form action="login.html" method="post">
             <div class="field-wrap">
               <label>
-                New password 1<span class="req">*</span>
+                Email<span class="req">*</span>
               </label>
-              <input class="pass1" type="password"required autocomplete="off"/>
+              <input class="reset-email" type="email"required autocomplete="off"/>
             </div>
-            <div class="field-wrap"> 
-              <label>
-                New Password 2<span class="req">*</span>
-              </label>
-              <input class ="pass2" type="password"required autocomplete="off"/>
-            </div>
-          <button class="button button-block reset-button"/>Reset Password</button>
+          <button class="button button-block reset-pass-email-button"/>Send email</button>
           
           </form>
 

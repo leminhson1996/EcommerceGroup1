@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return results[1] || 0;
+    }
   $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
   var $this = $(this),
@@ -44,10 +47,55 @@ $(document).ready(function(){
     
   });
 
-  $('.forgot').on('click', function(){
-    alert("We've just sent you an email, please check it !");
+  $('.reset-pass-email-button').on('click', function(){
+      event.preventDefault();
+      email = $('.reset-email').val();
+      if(!email){
+          alert("Enter your email again!");
+      }
+      else{
+          var data = {
+              email: email
+          };
+          $.ajax({
+              url: 'https://thawing-forest-86527.herokuapp.com/api/email_password_reset',
+              type: 'POST',
+              data: JSON.stringify(data),
+              dataType : "json",
+              contentType: "application/json; charset=utf-8",
+              success: function(result) {
+                  alert("We've just sent you an email, please check it !");
+              },
+              error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  alert("Check your information again");
+              }
+          });
+      }
   });
 
+    // reset password
+    var email;
+    $(".reset-button").click(function(){
+        event.preventDefault();
+        var data = {
+            "user_id": $.urlParam('user_id'),
+            "password1": $('.pass1').val(),
+            "password2": $('.pass2').val()
+        };
+        $.ajax({
+            url: 'https://thawing-forest-86527.herokuapp.com/api/reset_password/',
+            type: 'POST',
+            data: JSON.stringify(data),
+            dataType : "json",
+            contentType: "application/json; charset=utf-8",
+            success: function(result) {
+                document.location.href = 'login.html';
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("Check your information again");
+            }
+        });
+    });
   // Sign up
    $("#submit-register").click(function(){
           event.preventDefault();
@@ -110,6 +158,5 @@ $(document).ready(function(){
             }
         });
     });
-
 });
 
